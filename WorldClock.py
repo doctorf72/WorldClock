@@ -1,35 +1,41 @@
 from datetime import datetime
 import pytz
+#import tkinter as tk
 from tkinter import *
 import time
 
 root = Tk()
 root.geometry("315x175")
+root.config(bg="black")
+
 
 def times():
+    
+   
+    
     home = pytz.timezone('Asia/Jerusalem')
     local_time = datetime.now(home)
     current_time = local_time.strftime("%x WW%U\n%X%p")
-    clock.config(text=current_time)
-    name.config(text = 'Israel')
+    clock.config(text=current_time, bg="black", fg= "white")
+    name.config(text = 'Israel', bg="black", fg= "white")
 
     home = pytz.timezone('Europe/Dublin')
     local_time = datetime.now(home)
     current_time = local_time.strftime("%x WW%U\n%X%p")
-    clock1.config(text=current_time)
-    name1.config(text='Ireland')
+    clock1.config(text=current_time, bg="black", fg= "white")
+    name1.config(text='Ireland', bg="black", fg= "white")
 
     home = pytz.timezone('America/Phoenix')
     local_time = datetime.now(home)
     current_time = local_time.strftime("%x WW%U\n%X%p")
-    clock2.config(text=current_time)
-    name2.config(text='Phoenix[AZ]')
+    clock2.config(text=current_time, bg="black", fg= "white")
+    name2.config(text='Phoenix[AZ]', bg="black", fg= "white")
 
     home = pytz.timezone('US/Pacific')
     local_time = datetime.now(home)
     current_time = local_time.strftime("%x WW%U\n%X%p")
-    clock3.config(text=current_time)
-    name3.config(text='Portland[OR]')
+    clock3.config(text=current_time, bg="black", fg= "white")
+    name3.config(text='Portland[OR]', bg="black", fg= "white")
 
     clock.after(200, times)
 
