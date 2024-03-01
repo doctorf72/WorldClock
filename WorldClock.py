@@ -60,6 +60,7 @@ clock3.place(x=160, y=110)
 
 times()
 
+root.title("Felix's World Clock")
 root.mainloop()
 
 
