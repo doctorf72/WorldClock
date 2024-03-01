@@ -41,23 +41,24 @@ def times():
 
 LabelSize = 15
 ClockSize = 15
+titleFontStyle = "bold italic underline"
 
-name = Label(root, font=("times",LabelSize,"bold italic underline"))
+name = Label(root, font=("times",LabelSize,titleFontStyle))
 name.place(x=40, y=5)
 clock=Label(root, font=("times",ClockSize,"bold"))
 clock.place(x=10, y=30)
 
-name1 = Label(root, font=("times",LabelSize,"bold italic underline"))
+name1 = Label(root, font=("times",LabelSize,titleFontStyle))
 name1.place(x=190, y=5)
 clock1=Label(root, font=("times",ClockSize,"bold"))
 clock1.place(x=165, y=30)
 
-name2 = Label(root, font=("times",LabelSize,"bold italic underline"))
+name2 = Label(root, font=("times",LabelSize,titleFontStyle))
 name2.place(x=20, y=85)
 clock2=Label(root, font=("times",ClockSize,"bold"))
 clock2.place(x=10, y=110)
 
-name3 = Label(root, font=("times",LabelSize,"bold italic underline"))
+name3 = Label(root, font=("times",LabelSize,titleFontStyle))
 name3.place(x=180, y=85)
 clock3=Label(root, font=("times",ClockSize,"bold"))
 clock3.place(x=165, y=110)
