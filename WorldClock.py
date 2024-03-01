@@ -10,29 +10,28 @@ root.config(bg="black")
 
 
 def times():
-    
-   
+
     home = pytz.timezone('Asia/Jerusalem')
     local_time = datetime.now(home)
-    current_time = local_time.strftime("WW%U %x\n%a  %I:%M:%S%p")
+    current_time = local_time.strftime("WW%U %x\n%a  %H:%M:%S")
     clock.config(text=current_time, bg="black", fg= "white")
     name.config(text = 'Israel', bg="black", fg= "white")
 
     home = pytz.timezone('Europe/Dublin')
     local_time = datetime.now(home)
-    current_time = local_time.strftime("WW%U %x\n%a  %I:%M:%S%p")
+    current_time = local_time.strftime("WW%U %x\n%a  %H:%M:%S")
     clock1.config(text=current_time, bg="black", fg= "white")
     name1.config(text='Ireland', bg="black", fg= "white")
 
     home = pytz.timezone('America/Phoenix')
     local_time = datetime.now(home)
-    current_time = local_time.strftime("WW%U %x\n%a  %I:%M:%S%p")
+    current_time = local_time.strftime("WW%U %x\n%a  %H:%M:%S")
     clock2.config(text=current_time, bg="black", fg= "white")
     name2.config(text='Phoenix[AZ]', bg="black", fg= "white")
 
     home = pytz.timezone('US/Pacific')
     local_time = datetime.now(home)
-    current_time = local_time.strftime("WW%U %x\n%a  %I:%M:%S%p")
+    current_time = local_time.strftime("WW%U %x\n%a  %H:%M:%S")
     clock3.config(text=current_time, bg="black", fg= "white")
     name3.config(text='Portland[OR]', bg="black", fg= "white")
 
